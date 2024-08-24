@@ -12,5 +12,5 @@ export interface IName {
 }
 
 export interface IPiece extends IColor, IName {
-  curr: ICoordinate;
+  curr?: ICoordinate;
 }
