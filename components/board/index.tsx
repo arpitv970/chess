@@ -8,13 +8,13 @@ export const Board = () => {
   return (
     <div className="w-full h-screen flex justify-center items-center m-auto">
       <div className="flex justify-center items-start">
-        <div className="flex flex-col justify-evenly items-center gap-[15px] h-[500px]">
+        <div className="flex flex-col justify-evenly items-center gap-[5px] md:gap-[15px] h-[300px] md:h-[500px]">
           {ranks.map((item, idx) => (
             <div key={idx}>{item}</div>
           ))}
         </div>
         <div className="flex flex-col justify-center items-center m-auto">
-          <div className="border border-primary drop-shadow-xl rounded-xl overflow-hidden grid grid-cols-8 gap-0 h-[500px] w-[500px]">
+          <div className="border border-primary drop-shadow-xl rounded-xl overflow-hidden grid grid-cols-8 gap-0 h-[300px] w-[300px] md:h-[500px] md:w-[500px]">
             {Array.from({ length: files.length }, (r_item, r_idx) =>
               Array.from({ length: ranks.length }, (c_item, c_idx) => (
                 <Block
@@ -24,7 +24,7 @@ export const Board = () => {
               )),
             )}
           </div>
-          <div className="w-[560px] mt-3 flex justify-evenly items-center">
+          <div className="w-[330px] md:w-[560px] mt-3 flex justify-evenly items-center">
             {files.map((item, idx) => (
               <div key={idx}>{item}</div>
             ))}
