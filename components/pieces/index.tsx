@@ -4,7 +4,7 @@ import React from "react";
 export const PieceCard: React.FC<IPieceBlock> = ({ color, name, curr }) => {
   return (
     <div
-      className={`border ${color === "black" ? "bg-primary text-secondary" : "bg-secondary text-primary"} w-8 h-8 p-3 flex justify-center items-center rounded-lg`}
+      className={`border ${color === "black" ? "bg-primary text-secondary" : "bg-secondary text-primary"} text-sm md:text-lg w-3 md:w-8 h-3 md:h-8 p-3 flex justify-center items-center rounded-lg`}
     >
       {name}
     </div>
