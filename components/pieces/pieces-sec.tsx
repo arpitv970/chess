@@ -5,20 +5,20 @@ export const PiecesSec = () => {
   return (
     <div className="space-y-5 h-max mt-5">
       <div className="flex justify-between items-start">
-        <Pawn color="black" name="P" />
-        <Knight color="black" name="N" />
-        <Bishop color="black" name="B" />
-        <Rook color="black" name="R" />
-        <Queen color="black" name="Q" />
-        <King color="black" name="K" />
+        <Pawn color="black" />
+        <Knight color="black" />
+        <Bishop color="black" />
+        <Rook color="black" />
+        <Queen color="black" />
+        <King color="black" />
       </div>
       <div className="flex justify-between items-start">
-        <Pawn color="white" name="P" />
-        <Knight color="white" name="N" />
-        <Bishop color="white" name="B" />
-        <Rook color="white" name="R" />
-        <Queen color="white" name="Q" />
-        <King color="white" name="K" />
+        <Pawn color="white" />
+        <Knight color="white" />
+        <Bishop color="white" />
+        <Rook color="white" />
+        <Queen color="white" />
+        <King color="white" />
       </div>
     </div>
   );
